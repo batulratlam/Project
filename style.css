@@ -1,0 +1,231 @@
+:root{
+  --bg: #0b0f17;
+  --panel: #0f1522;
+  --muted: #9fb3c8;
+  --text: #e6f1ff;
+  --accent: #51e0ff;
+  --accent-2: #b66bff;
+  --ring: rgba(81,224,255,0.35);
+  --glass: rgba(255,255,255,0.06);
+  --shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 600px at -10% -10%, rgba(182,107,255,0.18), transparent 60%),
+    radial-gradient(1000px 600px at 120% 120%, rgba(81,224,255,0.15), transparent 60%),
+    var(--bg);
+  color:var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+  position:sticky;
+  top:0;
+  height:100vh;
+  width:290px;
+  min-width:260px;
+  background: linear-gradient(180deg, rgba(14,19,32,0.9), rgba(14,19,32,0.6));
+  border-right:1px solid rgba(255,255,255,0.08);
+  padding:20px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  backdrop-filter: blur(8px);
+}
+
+.brand{
+  position:relative;
+  padding:14px;
+  border-radius:18px;
+  background: linear-gradient(135deg, rgba(81,224,255,0.08), rgba(182,107,255,0.08));
+  box-shadow: var(--shadow);
+}
+.logo-glow{
+  position:absolute; inset:-2px;
+  background: radial-gradient(120px 70px at 20% 0%, rgba(81,224,255,0.25), transparent 60%),
+              radial-gradient(100px 60px at 90% 80%, rgba(182,107,255,0.25), transparent 60%);
+  filter: blur(14px); z-index:0; pointer-events:none;
+}
+.brand-title{
+  margin:0; position:relative; z-index:1;
+  font-family: Orbitron, sans-serif; letter-spacing:1px; line-height:1.05;
+  font-size:28px; text-transform:uppercase;
+}
+.tagline{
+  position:relative; z-index:1; margin:8px 0 0; color:var(--muted); font-size:12.5px; line-height:1.35;
+}
+
+.nav ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;}
+.nav a, .nav-parent{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  color:var(--text); text-decoration:none;
+  padding:10px 12px; border-radius:12px; background:transparent; border:1px solid transparent;
+  transition: all .2s ease;
+  font-weight:600;
+}
+.nav a:hover, .nav-parent:hover{background:var(--glass); border-color:rgba(255,255,255,0.08)}
+.nav a.active{border-color: var(--ring); box-shadow: 0 0 0 4px var(--ring);}
+.nav-group{margin-top:6px}
+.nav-parent{
+  width:100%; background:rgba(255,255,255,0.02); cursor:pointer; font:inherit; color:inherit;
+}
+.chev{opacity:.8; transition: transform .2s ease}
+.nav-parent[aria-expanded="true"] .chev{transform: rotate(180deg)}
+.submenu{margin:6px 0 0 0; padding-left:8px; display:flex; flex-direction:column; gap:6px;}
+.submenu .nav-link{background:rgba(255,255,255,0.02); font-weight:500}
+
+/* Sidebar footer */
+.sidebar-footer{margin-top:auto; color:var(--muted); font-size:12px; opacity:.85}
+
+/* Main content layout */
+.content{
+  flex:1;
+  min-width:0;
+  padding-left: 24px;
+  overflow-x:hidden;
+}
+
+/* Panels */
+.panel{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:22px;
+  padding:24px;
+  margin:24px 24px 32px 24px;
+  box-shadow: var(--shadow);
+  position:relative;
+}
+.panel-head h3{
+  margin:0 0 6px 0;
+  font-family: Orbitron, sans-serif;
+  font-size:24px; letter-spacing:.6px;
+}
+.subtitle{margin:0; color:var(--muted)}
+
+.panel-body{margin-top:14px; line-height:1.7}
+.placeholder{opacity:.6; font-style:italic}
+
+.panel-media{
+  margin-top:16px; border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,0.06)
+}
+.panel-media img{width:100%; height:auto; display:block}
+
+.gallery{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px;
+}
+.gallery img{aspect-ratio: 4/3; object-fit:cover}
+
+/* Hero */
+.hero{
+  padding:0; overflow:hidden;
+  background: linear-gradient(120deg, rgba(81,224,255,0.12), rgba(182,107,255,0.12));
+}
+.hero-overlay{
+  position:absolute; inset:0;
+  background:
+    radial-gradient(600px 300px at 20% 20%, rgba(81,224,255,0.18), transparent 60%),
+    radial-gradient(800px 400px at 80% 60%, rgba(182,107,255,0.18), transparent 60%);
+  filter: blur(10px);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative; padding:40px 32px 28px 32px;
+}
+.hero h2{
+  margin:0 0 8px 0; font-family: Orbitron, sans-serif; font-size:36px; letter-spacing:1px;
+}
+.lead{color:#cfe6ff; max-width:900px}
+.hero-grid{
+  margin-top:18px;
+  display:grid; grid-template-columns: repeat(4, 1fr); gap:10px;
+}
+.hero-grid img{width:100%; height:160px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,0.06)}
+
+/* Two column */
+.two-col{display:grid; grid-template-columns:1.2fr 1fr; gap:24px}
+@media (max-width: 1000px){
+  .two-col{grid-template-columns:1fr}
+}
+
+/* Contact form */
+.contact-form{
+  display:grid; gap:12px; background: rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08); padding:16px; border-radius:16px;
+}
+.contact-form label{display:grid; gap:6px; font-weight:600}
+.contact-form input, .contact-form textarea{
+  background:#0c1320; border:1px solid rgba(255,255,255,0.12); color:var(--text);
+  padding:10px 12px; border-radius:10px; outline:none;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+  border-color: var(--accent); box-shadow: 0 0 0 3px var(--ring);
+}
+.contact-form button{
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color:#001018; font-weight:800; border:none; padding:10px 14px; border-radius:12px; cursor:pointer;
+}
+.form-hint{color:var(--muted); font-size:12px; margin:4px 0 0}
+
+/* Footer */
+.main-footer{
+  color:var(--muted); font-size:13px; text-align:center; margin:10px 0 40px;
+}
+
+/* Chatbot */
+.chat-toggle{
+  position:fixed; right:22px; bottom:22px;
+  width:54px; height:54px; border-radius:16px; border:1px solid rgba(255,255,255,0.18);
+  background: linear-gradient(135deg, rgba(81,224,255,0.16), rgba(182,107,255,0.16));
+  color:var(--text); display:grid; place-items:center; cursor:pointer; backdrop-filter: blur(6px);
+  box-shadow: var(--shadow);
+}
+.chatbot{
+  position:fixed; right:22px; bottom:86px; width:340px; max-height:70vh;
+  background: linear-gradient(180deg, rgba(12,19,32,0.98), rgba(12,19,32,0.92));
+  border:1px solid rgba(255,255,255,0.14); border-radius:18px; display:flex; flex-direction:column; overflow:hidden;
+  box-shadow: var(--shadow);
+}
+.chat-head{
+  display:flex; align-items:center; justify-content:space-between; padding:10px 12px;
+  background: rgba(255,255,255,0.04); border-bottom:1px solid rgba(255,255,255,0.08)
+}
+.chat-close{
+  background:transparent; color:var(--text); border:none; font-size:20px; cursor:pointer;
+}
+.chat-body{
+  padding:12px; overflow:auto; display:flex; flex-direction:column; gap:10px; min-height:140px;
+}
+.msg{
+  padding:10px 12px; border-radius:12px; max-width:82%;
+  line-height:1.45; border:1px solid rgba(255,255,255,0.1);
+}
+.msg.bot{align-self:flex-start; background:rgba(81,224,255,0.08)}
+.msg.user{align-self:flex-end; background:rgba(255,255,255,0.06)}
+.chat-input{display:flex; gap:8px; padding:10px; border-top:1px solid rgba(255,255,255,0.08)}
+.chat-input input{
+  flex:1; background:#0c1320; color:var(--text); border:1px solid rgba(255,255,255,0.12);
+  padding:10px 12px; border-radius:10px; outline:none;
+}
+.chat-input input:focus{border-color: var(--accent); box-shadow: 0 0 0 3px var(--ring)}
+.chat-input button{
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color:#001018; font-weight:800; border:none; padding:10px 12px; border-radius:10px; cursor:pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px){
+  .sidebar{position:fixed; z-index:20; transform: translateX(0); width:240px}
+  body{padding-left:240px}
+  .hero-grid{grid-template-columns: repeat(2,1fr)}
+}
+@media (max-width: 640px){
+  .sidebar{transform: translateX(-100%)} /* collapsed by default on small screens */
+  body{padding-left:0}
+  .content{padding-left:12px}
+}

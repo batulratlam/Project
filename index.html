@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virtual Organs Hub</title>
+  <meta name="description" content="Virtual Organs Hub — Where biology meets technology: exploring the future of virtual organs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Futuristic, academic font pairing -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar" aria-label="Primary">
+    <div class="brand">
+      <div class="logo-glow" aria-hidden="true"></div>
+      <h1 class="brand-title">VIRTUAL<br>ORGANS HUB</h1>
+      <p class="tagline">Where biology meets technology:<br>exploring the future of virtual organs</p>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#types">Types of Virtual Organs</a></li>
+        <li><a class="nav-link" href="#modeling">Computational Modeling</a></li>
+
+        <li class="nav-group">
+          <button class="nav-parent" aria-expanded="false" aria-controls="apps-submenu">
+            Applications
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24"><path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+          <ul id="apps-submenu" class="submenu" hidden>
+            <li><a class="nav-link" href="#apps-drug">Drug Testing &amp; Development</a></li>
+            <li><a class="nav-link" href="#apps-diagnostics">Diagnostics &amp; Personalized Medicine</a></li>
+            <li><a class="nav-link" href="#apps-aiml">AI / Machine Learning</a></li>
+          </ul>
+        </li>
+
+        <li><a class="nav-link" href="#future">Future Scope</a></li>
+        <li><a class="nav-link" href="#references">References</a></li>
+        <li><a class="nav-link" href="#about">About / Contact</a></li>
+      </ul>
+    </nav>
+
+    <footer class="sidebar-footer">
+      <small>Educational project • © <span id="year"></span></small>
+    </footer>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Hero / Home -->
+    <section id="home" class="panel hero" data-title="Home">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <h2>Virtual Organs Hub</h2>
+        <p class="lead">
+          This website is an educational project. It explores the concept of <strong>virtual organs</strong>—computer-generated models of human organs used in research and healthcare.
+        </p>
+        <div class="hero-grid">
+          <!-- Replace any of these with your own images -->
+          <img src="https://images.unsplash.com/photo-1581092334808-7c54a7a5a17a?q=80&w=1080&auto=format&fit=crop" alt="Micrograph abstract" />
+          <img src="https://images.unsplash.com/photo-1559757175-08fda9f1e8b4?q=80&w=1080&auto=format&fit=crop" alt="Circuitry" />
+          <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=1080&auto=format&fit=crop" alt="Medical tech" />
+          <img src="https://images.unsplash.com/photo-1581089781785-603411fa81e5?q=80&w=1080&auto=format&fit=crop" alt="DNA art" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section id="introduction" class="panel" data-title="Introduction">
+      <header class="panel-head">
+        <h3>Introduction</h3>
+        <p class="subtitle">Add your content below — the chatbot will learn from what you write.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Write your introduction here -->
+        <p class="placeholder">[Place your Introduction content here]</p>
+      </div>
+      <div class="panel-media">
+        <img src="https://images.unsplash.com/photo-1559757175-0ac05a4f902c?q=80&w=1200&auto=format&fit=crop" alt="Abstract medical interface" />
+      </div>
+    </section>
+
+    <!-- Types of Virtual Organs -->
+    <section id="types" class="panel" data-title="Types of Virtual Organs">
+      <header class="panel-head">
+        <h3>Types of Virtual Organs</h3>
+        <p class="subtitle">Cellular to whole-organ digital twins, multi-scale sims, etc.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Add types, examples, images -->
+        <p class="placeholder">[Place your Types content here]</p>
+      </div>
+      <div class="panel-media gallery">
+        <img src="https://images.unsplash.com/photo-1580281657527-47d5ea0b5d1b?q=80&w=800&auto=format&fit=crop" alt="Heart rendering" />
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop" alt="Brain networks" />
+        <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=800&auto=format&fit=crop" alt="Lungs model" />
+      </div>
+    </section>
+
+    <!-- Computational Modeling -->
+    <section id="modeling" class="panel" data-title="Computational Modeling">
+      <header class="panel-head">
+        <h3>Computational Modeling</h3>
+        <p class="subtitle">Methods, PDEs/ODEs, agent-based, FEM, ML surrogates.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Add modeling techniques -->
+        <p class="placeholder">[Place your Computational Modeling content here]</p>
+      </div>
+      <div class="panel-media">
+        <img src="https://images.unsplash.com/photo-1534759846116-57968a6b7a98?q=80&w=1200&auto=format&fit=crop" alt="Data mesh" />
+      </div>
+    </section>
+
+    <!-- Applications: Drug Testing & Development -->
+    <section id="apps-drug" class="panel" data-title="Drug Testing & Development">
+      <header class="panel-head">
+        <h3>Applications: Drug Testing &amp; Development</h3>
+        <p class="subtitle">In-silico trials, toxicity screening, dose optimization.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Add drug testing content -->
+        <p class="placeholder">[Place your Drug Testing & Development content here]</p>
+      </div>
+      <div class="panel-media">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format&fit=crop" alt="Neural networks" />
+      </div>
+    </section>
+
+    <!-- Applications: Diagnostics & Personalized Medicine -->
+    <section id="apps-diagnostics" class="panel" data-title="Diagnostics & Personalized Medicine">
+      <header class="panel-head">
+        <h3>Applications: Diagnostics &amp; Personalized Medicine</h3>
+        <p class="subtitle">Digital twins, risk prediction, treatment planning.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Add diagnostics content -->
+        <p class="placeholder">[Place your Diagnostics & Personalized Medicine content here]</p>
+      </div>
+      <div class="panel-media">
+        <img src="https://images.unsplash.com/photo-1559757175-0ac05a4f902c?q=80&w=1200&auto=format&fit=crop" alt="Medical HUD" />
+      </div>
+    </section>
+
+    <!-- Applications: AI / Machine Learning -->
+    <section id="apps-aiml" class="panel" data-title="AI / Machine Learning">
+      <header class="panel-head">
+        <h3>Applications: AI / Machine Learning</h3>
+        <p class="subtitle">Surrogate models, emulators, uncertainty, explainability.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Add AI/ML content -->
+        <p class="placeholder">[Place your AI / Machine Learning content here]</p>
+      </div>
+      <div class="panel-media gallery">
+        <img src="https://images.unsplash.com/photo-1534759846116-57968a6b7a98?q=80&w=800&auto=format&fit=crop" alt="Data viz" />
+        <img src="https://images.unsplash.com/photo-1545670723-196ed0954987?q=80&w=800&auto=format&fit=crop" alt="AI circuits" />
+        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop" alt="Code matrix" />
+      </div>
+    </section>
+
+    <!-- Future Scope -->
+    <section id="future" class="panel" data-title="Future Scope">
+      <header class="panel-head">
+        <h3>Future Scope</h3>
+        <p class="subtitle">Roadmap, ethics, regulation, interoperability.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Add future scope content -->
+        <p class="placeholder">[Place your Future Scope content here]</p>
+      </div>
+      <div class="panel-media">
+        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Futuristic skyline" />
+      </div>
+    </section>
+
+    <!-- References -->
+    <section id="references" class="panel" data-title="References">
+      <header class="panel-head">
+        <h3>References</h3>
+        <p class="subtitle">Cite papers, datasets, tools, standards.</p>
+      </header>
+      <div class="panel-body content-slot">
+        <!-- 📝 Add references (bulleted / numbered) -->
+        <p class="placeholder">[Place your References here]</p>
+      </div>
+    </section>
+
+    <!-- About / Contact -->
+    <section id="about" class="panel" data-title="About / Contact">
+      <header class="panel-head">
+        <h3>About / Contact</h3>
+        <p class="subtitle">Reach out for collaboration, questions, or feedback.</p>
+      </header>
+
+      <div class="panel-body two-col">
+        <div>
+          <h4>Contact</h4>
+          <p><strong>Batul Ratlamwala</strong><br>
+          <a href="mailto:batul.ratlamwala14@gmail.com">batul.ratlamwala14@gmail.com</a></p>
+
+          <!-- Free contact form (replace with your Formspree endpoint if you want email forwarding) -->
+          <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/your-form-id">
+            <label>
+              Your Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Your Query
+              <textarea name="message" rows="5" placeholder="Write your question..." required></textarea>
+            </label>
+            <button type="submit">Send</button>
+            <p class="form-hint">No backend needed. Use a free Formspree endpoint (replace <code>your-form-id</code>).</p>
+          </form>
+        </div>
+
+        <div>
+          <h4>About the Project</h4>
+          <p>
+            A clean, modern, academic resource and image-rich hub for virtual organs. Add your own content to each section;
+            the built-in bot will answer questions using only what’s written on this site.
+          </p>
+          <ul class="ticks">
+            <li>Vertical sidebar with expandable Applications</li>
+            <li>Responsive, mobile-friendly</li>
+            <li>Futuristic gradients + glow, accessible contrast</li>
+            <li>Client-side search &amp; Q&amp;A (no paid APIs)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <span>Virtual Organs Hub • Free & Open • Built with HTML/CSS/JS</span>
+    </footer>
+  </main>
+
+  <!-- Floating Chatbot -->
+  <button class="chat-toggle" aria-label="Open assistant">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3C7.03 3 3 6.58 3 11c0 2.38 1.22 4.51 3.16 5.96-.07.71-.32 1.94-1.18 3.17 0 0 1.69-.24 3.37-1.2.89.25 1.83.38 2.8.38 4.97 0 9-3.58 9-8s-4.03-8-9-8z" fill="currentColor"/></svg>
+  </button>
+
+  <div class="chatbot" role="dialog" aria-modal="false" aria-label="Virtual Organs Assistant" hidden>
+    <div class="chat-head">
+      <strong>V.O. Assistant</strong>
+      <button class="chat-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="chat-body" id="chat-log" aria-live="polite">
+      <div class="msg bot">
+        Hi! Ask me anything about this site. I answer using the content on the page.
+      </div>
+    </div>
+    <form class="chat-input" id="chat-form">
+      <input id="chat-question" type="text" placeholder="Ask about types, modeling, applications..." aria-label="Your question" required />
+      <button type="submit" aria-label="Send">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
