@@ -8,6 +8,15 @@ const KNOWLEDGE = [
     and therapies. They power in-silico experiments, reduce wet-lab cost, and support patient-specific decisions.`,
     links:["introduction.html","applications.html"]
   },
+    {
+    topic:"heart",
+    text:`The virtual heart is one of the earliest and most advanced organ models. It simulates both the electrical activity 
+    that drives heart rhythms and the mechanical forces that pump blood. These models are used to study arrhythmias, to test
+     pacemakers and defibrillators, and to plan catheter ablation surgeries. By creating patient-specific heart models, doctors 
+     can predict how an individual will respond to treatment before entering the operating room. Virtual hearts are also central
+      to precision cardiology, where digital twins are being developed to improve diagnosis and treatment planning.`,
+    links:["types.html"]
+  },
   {
     topic:"types",
     text:`Common virtual organs: heart (electro-mechanics & hemodynamics), liver (metabolism and toxicity),
@@ -33,10 +42,12 @@ const KNOWLEDGE = [
     links:["diagnostics.html"]
   },
   {
-    topic:"ai",
-    text:`AI/ML augment simulation via surrogate models (emulators), physics-informed neural nets (PINNs),
-    graph neural networks for anatomy meshes, GANs for realistic augmentation, and active learning loops.`,
-    links:["ai-ml.html"]
+    topic:"brain",
+    text:`The virtual brain offers tools to model neural networks and conditions such as epilepsy. Projects
+     like the Virtual Epileptic Patient use brain scans and network modeling to simulate seizure propagation,
+      helping surgeons decide where to operate. Similar methods are being applied to neurodegenerative diseases 
+      and brain stimulation therapies.`,
+    links:["types.html"]
   },
   {
     topic:"future",
@@ -46,8 +57,8 @@ const KNOWLEDGE = [
   },
   {
     topic:"contact",
-    text:`Contact Batul Ratlamwala at batul.ratlamwala14@gmail.com or via the site form (About / Contact).`,
-    links:["about-contact.html"]
+    text:`Contact Batul Ratlamwala at batul.ratlamwala14@gmail.com`,
+
   }
 ];
 
