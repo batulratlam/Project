@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VOH – Future Scope</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="app">
+  <aside class="sidebar"> 
+         <aside class="">
+  <div class="brand">
+    <div class="logo-glow" aria-hidden="true"></div>
+    <div>
+      <h1 class="brand-title">VIRTUAL ORGANS HUB</h1>
+      <div class="tagline">Where biology meets technology: exploring the future of virtual organs</div>
+    </div>
+  </div>
+
+  <div class="search">
+    <span class="loupe">🔎</span>
+    <input id="globalSearch" type="search" placeholder="Search sections… (e.g. AI, Drug)">
+  </div>
+
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="introduction.html">Introduction</a></li>
+    <li><a href="types.html">Types of Virtual Organs</a></li>
+    <li><a href="modeling.html">Computational Modeling</a></li>
+    <li>
+      <a href="applications.html">Applications</a>
+      <!-- <ul class="sub">
+        <li><a href="drug-testing.html">Drug Testing & Development</a></li>
+        <li><a href="diagnostics.html">Diagnostics & Personalized Medicine</a></li>
+        <li><a href="ai-ml.html">AI / Machine Learning</a></li>
+      </ul> -->
+    </li>
+    <li><a href="future-scope.html">Future Scope</a></li>
+    <li><a href="references.html">References</a></li>
+    <!-- <li><a href="about-contact.html">About / Contact</a></li> -->
+  </ul>
+</aside>  
+  </aside>
+  <main class="main">
+    <div class="floating-icons" aria-hidden="true"> 
+        <!-- Simple neon DNA -->
+  <svg class="icon dna" width="120" height="380" viewBox="0 0 120 380">
+    <path d="M20 20 C 100 60, 100 140, 20 180 S -60 300, 60 340" />
+    <path d="M100 20 C 20 60, 20 140, 100 180 S 180 300, 40 340" />
+    <path d="M25 80 L 95 60 M 25 140 L 95 120 M 25 200 L 95 180" />
+  </svg>
+  <!-- Heartbeat -->
+  <svg class="icon heart" width="180" height="120" viewBox="0 0 180 120">
+    <path d="M0 70 H40 L60 30 L85 95 L110 50 L130 70 H180" />
+  </svg>
+  <!-- Brain-ish squiggle -->
+  <svg class="icon brain" width="220" height="140" viewBox="0 0 220 140">
+    <path d="M20 70 C 20 10, 90 10, 90 70 S 160 130, 200 70 S 130 10, 130 70 S 60 130, 20 70 Z" />
+  </svg>  
+  </div>
+
+    <section class="panel">
+      <h2>Future Scope</h2>
+      <p>Virtual organs are moving from research concepts to clinical tools, and their future lies in becoming central to precision medicine. As computational power, bioinformatics, and artificial intelligence continue to advance, these models will become more accurate, more adaptive, and more widely available. The long-term vision is to link organ-specific models into full-body digital twins, capable of predicting how a patient’s entire physiology responds to disease, drugs, or lifestyle changes.</p>
+
+      <!--<div class="timeline">
+        <div class="milestone">
+          <strong>2025–2026:</strong> Open benchmarks for organ models; better validation datasets.
+        </div>
+        <div class="milestone">
+          <strong>2027–2028:</strong> Regulatory pathways for limited indications; hospitals pilot bedside twins.
+        </div>
+        <div class="milestone">
+          <strong>2029–2031:</strong> Real-time twins integrate wearables/EMR with privacy-preserving learning.
+        </div>
+        <div class="milestone">
+          <strong>2032+:</strong> Mixed-reality organ visualization, robust standards, global access.
+        </div>
+      </div> -->
+    </section>
+
+    <section class="panel grid cols-2">
+      <article class="card">
+        <h3>Risks</h3>
+        <p>There are also risks that must be addressed. Virtual organs depend on sensitive genomic and clinical data, raising concerns around privacy and security. High costs and infrastructure requirements could make them accessible only to advanced healthcare systems, deepening inequalities in global health. There is also the challenge of accountability if model predictions are inaccurate, as well as the danger of over-reliance on simulations that remain simplifications of reality. Careful regulation, ethical safeguards, and balanced use will be essential to ensure these technologies improve healthcare without introducing new harms.</p>
+      </article>
+      <article class="card">
+        <h3>Opportunities</h3>
+        <p>The opportunities in this field are enormous. Whole-body digital twins could enable highly personalized treatment, reduce the reliance on trial-and-error medicine, and shift healthcare from reactive treatment to proactive prevention. They also promise to accelerate drug development, reduce animal testing, and expand access to advanced training through realistic simulations. By integrating real-time data from wearables, genomics, and clinical records, these models could continuously update and provide doctors with powerful decision-support systems.</p>
+      </article>
+    </section>
+  </main>
+</div>
+
+<button class="chatbot-toggle">VOH</button>
+<div class="chatbot"><div class="chat-header"><div class="title">VOH Assistant</div><button onclick="this.closest('.chatbot').classList.remove('open')" class="badge">Close</button></div><div class="chat-body"></div><div class="chat-input"><input id="chatInput" placeholder="Ask something…"><button id="chatSend">Send</button></div></div>
+<script src="js/main.js"></script><script src="js/chatbot.js"></script>
+</body></html>
